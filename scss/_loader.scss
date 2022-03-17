@@ -1,0 +1,49 @@
+.loader-container{
+    width:100%;
+}
+.loader-bg-cover{
+    width: inherit;
+    max-width: inherit;
+    height: 100vh;
+    background-color: var(--color-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader-bg{
+   min-width: 100vh;
+   height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    // background-color: red;
+}
+
+.loader{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    // position: relative;
+  
+   border-left: 3px solid var(--color-secondary);
+//    border-top: 3px solid var(--color-secondary);
+
+}
+.anim{
+    animation: loaderanim 2s ease-in  infinite ;
+}
+@keyframes loaderanim {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}

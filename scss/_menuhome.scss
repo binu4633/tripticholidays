@@ -1,0 +1,130 @@
+@import "base";
+.menu-base-container{
+    width: 100%;
+}
+.menu-tab{
+    // position: sticky;
+  position: fixed;
+  width:  calc(100 * var(--vw));
+//   width: inherit;
+//   max-width: inherit;
+  min-height: 5rem;
+//   background-color: var(--color-primary);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+//   border: 3px dashed red;
+  &__logo-container{
+      width: 8rem;
+      height: 8rem;
+      margin-right: auto;
+      img{
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+      }
+  }
+  &__menu-container{
+    width: 3.5rem;
+    height: 4rem;
+    // border: 1px solid var(--color-secondary);
+    margin-right:2rem;
+    border-radius: 5px;
+    margin-top: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 3px;
+    cursor: pointer;
+  }
+}
+
+.menu-bar1{
+    width: 45%;
+    height: 3px;
+    background-color: var(--color-secondary);
+    align-self: flex-end;
+    // transform: translateX(-100%);
+}
+.menu-bar2{
+    width: 90%;
+    height: 3px;
+    background-color: var(--color-secondary);
+}
+.menu-bar3{
+    width: 45%;
+    height: 3px;
+    background-color: var(--color-secondary);
+    align-self: flex-start;
+    // transform: translateX(100%);
+}
+.menu-display-container{
+    width: 100%;
+}
+.menu-display{
+    // width:  calc(100 * var(--vw));
+    width: inherit;
+    height: 100vh;
+    z-index: 9;
+    background-color: var(--color-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary);
+    text-align: center;
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);   
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: all 0.5s ease-in;
+    a:link {
+        // background-color: red;
+        color: var(--color-secondary);
+        text-decoration: none;
+        transition: letter-spacing 0.2s;
+        // font-family: 'Courier New', monospace;
+        font-family: 'Noto Serif Display', serif;
+        // font-weight: 700px;
+        font-weight: 500;
+       
+      }
+
+    &__right{
+        width: 400px;
+        height: 50px;
+        // background-color: red;
+        color: white;
+        margin: 10px;
+        transition: letter-spacing 0.2s;
+
+       
+    }
+    &__left{
+        width: 400px;
+        height: 50px;
+        // background-color: red;
+        color: white;
+
+        &:hover{
+            transition: all 0.2s;
+            letter-spacing: 3.5px;
+           
+        }
+    }
+    &__center{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.menu-display__right:hover{
+    transition:letter-spacing 0.2s;
+    letter-spacing: 3.5px;
+   
+}

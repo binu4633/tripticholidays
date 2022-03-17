@@ -1,0 +1,134 @@
+
+.heading-secondary-dark{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Noto Serif Display', serif;
+    // font-family: 'Contrail One', cursive;
+    // font-weight: 300;
+    // font-style:oblique;
+    font-weight: bold;
+    color: var(--color-secondary);
+    word-spacing: 1.5rem;
+    // transition: letter-spacing 0.2s;
+    @include respond(phone){
+        font-size: 3rem;
+    }
+   
+}
+.heading-secondary-dark2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Noto Serif Display', serif;
+    // font-weight: 300;
+    // font-style:oblique;
+    font-weight: bold;
+    color: var(--color-secondary);
+    word-spacing: 1.5rem;
+    // transition: letter-spacing 0.2s;
+    @include respond(phone){
+        font-size: 3rem;
+    }
+  
+   
+}
+.heading-secondary-white{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Noto Serif Display', serif;
+    // font-weight: 300;
+    font-style:oblique;
+    font-weight: bold;
+    color: var(--color-secondary-text-white);
+    word-spacing: 1.5rem;
+    //  transition: letter-spacing 0.2s;
+    @include respond(phone){
+        font-size: 3rem;
+    }
+  
+   
+}
+
+
+// .heading-secondary-dark:hover{
+//    letter-spacing: 1.5px;
+// }
+// .heading-secondary-white:hover{
+//    letter-spacing: 1.5px;
+// }
+
+
+.fade-op-zero{
+    opacity: 0;
+    transform: scale(.95);
+}
+.fade-op-one{
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 3s,transform 1s ;
+}
+
+.hero-h1{
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+    @include respond(phone) {
+        font-size: 6rem;
+      }
+}
+.hero-h2{
+    font-size: 4rem;
+    text-transform:capitalize;
+    color: var(--color-secondary);
+    // @include respond(phone) {
+    //     font-size: 3rem;
+    //   }
+    font-family: 'Noto Serif Display', serif;
+    @include respond(phone) {
+        font-size: 3rem;
+      }
+}
+
+.h3{
+    font-size: 3.5rem;
+    padding: 1rem;
+    font-family: 'Noto Serif Display', serif;
+    text-transform: capitalize;
+
+    @include respond(phone) {
+        font-size: 2rem;
+        }
+}
+
+.p-one{
+   
+    font-size: 3rem;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+    @include respond(phone) {
+        font-size: 2rem;
+        }
+}
+.p-one-m{
+    font-size: 2rem;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 600;
+    // @include respond(phone) {
+    //     font-size: 3rem;
+    //   }
+    @include respond(phone) {
+        font-size: 1.7rem;
+        }
+
+}
+.btn-link{
+   
+    font-size: 3rem;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+
+.form{
+    font-family: 'Noto Serif Display', serif; 
+}
