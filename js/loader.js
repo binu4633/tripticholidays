@@ -15,3 +15,5 @@ imageLoaded(document.querySelectorAll(".img"),{ background: true },function(){
        })
  
 })
+
+console.log('git testing');
