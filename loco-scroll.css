@@ -37,15 +37,18 @@ html.has-scroll-smooth {
   
   .c-scrollbar {
     position: absolute;
+ 
     right: 0;
     top: 0;
-    width: 11px;
+    width: 17px;
+    /* width: 20%; */
     height: 100%;
     transform-origin: center right;
+    background-color: var(--color-primary);
     transition: transform 0.3s, opacity 0.3s;
-    opacity: 0; }
-    .c-scrollbar:hover {
-      transform: scaleX(1.45); }
+    opacity: 1; }
+    /* .c-scrollbar:hover {
+      transform: scaleX(1.45); } */
     .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
       opacity: 1; }
     [data-scroll-direction="horizontal"] .c-scrollbar {
@@ -59,12 +62,13 @@ html.has-scroll-smooth {
   
   .c-scrollbar_thumb {
     position: absolute;
+   
     top: 0;
     right: 0;
-    background-color: black;
-    opacity: 0.5;
+    background-color:var(--color-secondary);
+    opacity: 1;
     width: 7px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 2px;
     cursor: -webkit-grab;
     cursor: grab; }
