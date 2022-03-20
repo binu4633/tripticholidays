@@ -5,11 +5,12 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build":"parcel build index.html --out-dir ./dist"
+    "build": "parcel build index.html --out-dir ./dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^9.6.9",
     "gsap": "^3.9.1",
     "imagesloaded": "^5.0.0",
     "locomotive-scroll": "^4.1.4",

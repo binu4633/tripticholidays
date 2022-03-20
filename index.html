@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;1,300;1,600&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./loco-scroll.css">
+
+<script type="module" defer src="./js/form.js"></script>
 <script type="module"  defer src="./js/common.js"></script>
 <script type="module"  defer src="./js/loader.js"></script>
 <script defer src="./js/canvas.js"></script>  
@@ -75,42 +77,45 @@
                </div> 
                 <div class="landing__social-media"> 
                    <div class="landing__social-media-box1">
-                    <a href="tel:+919746334633">
+                    <a href="tel:+919061238269">
                         <div>
                             <img src="./img/tel.svg" alt="" class="img">
                         </div>
                       </a>
                     </div>
                    <div class="landing__social-media-box2">
-                    <a href="mailto:binu4633@gmail.com">
+                    <a href="mailto:tripticholidays@gmail.com">
                         <div>
                             <img src="./img/email.svg" alt="" class="img">
                         </div>
                       </a>
                     </div>
                    <div class="landing__social-media-box3">
-                    <a href="#">
+                    <a href="https://www.facebook.com/tripticholidays/?ref=pages_you_manage">
                         <div>
                             <img src="./img/facebook.svg" alt="" class="img">
                         </div>
                       </a>
                     </div>
                    <div class="landing__social-media-box4" class="img">
-                    <a href="#">
+                    <a href="https://www.instagram.com/tripticholidays/">
                         <div>
                             <img src="./img/insta.svg" alt="" class="img">
                         </div>
                       </a>
                     </div>
                    <div class="landing__social-media-box5">
-                    <a href="#">
+                    <a href="https://wa.me/919061238269">
                         <div>
                             <img src="./img/whatsapp.svg" alt="" class="img">
                         </div>
                       </a>
                     </div>
                </div>  
-          
+              
+              
+             
+              
 
 
            </div>
@@ -399,34 +404,43 @@
             <div class="footer__main-block">
             <div class="footer__form-block">
                  <div class="footer__form-card">
-                     <form action="https://formsubmit.co/binu4633@gmail.com" method="POST" class="form" id="usrform">
+                     <!-- <form action="https://formsubmit.co/binu4633@gmail.com" method="POST" class="form" id="usrform"> -->
+                     <form  class="form" id="usrform">
                           <div class="form-group"> 
                              <label for="name" class="form-label">Name</label>
-                             <input type="text" class="form-input"   placeholder=""
+                             <input type="text" class="form-input input-name"   placeholder=""
                              id="name"
                              required>
                          </div>
                          <div class="form-group">
                              <label for="phone-number" class="form-label">Phone Number</label>
-                             <input type="tel" class="form-input"   placeholder=""
+                             <input type="tel" class="form-input input-phone"   placeholder=""
                              id="phone-number"
                              required>
                          </div>
                          <div class="form-group">
                              <label for="email" class="form-label">Email Id</label>
-                             <input   type="email" class="form-input"   placeholder=""
+                             <input   type="email" name="email" class="form-input input-email"   placeholder=""
                              id="email"
                              required>
                          </div> 
                          <div class="form-textarea-group">
                          <label for="textr" class="form-label">Message </label>
-                         <textarea id="textr"  name="comment" class="textarea"   placeholder="somethig">
+                         <textarea id="textr"  name="comment" class="textarea input-message"   placeholder="">
                          </textarea>
                         </div>
                         <div class="form-group-btn">
                             <button type="submit" class="btn-submit">submit</button>
                         </div>
                      </form>
+                     <div class="thank-card">
+                         <div class="thank-card__box">
+
+                             <p class="h3">thank you</p>
+                             <p class="h3 user-name"></p>
+                             <button class="thank-close"><p class="p-one-m">close</p></button>
+                         </div>
+                     </div>
                    
                  </div>
              </div>
@@ -434,19 +448,21 @@
                
                  <div class="footer__address-block__social-media">
                      <div class="footer__address-block__social-media__phone-block">
-                        <a href="tel:+919061238269"><div>
-                            <div>
-                                <img src="./img/tel.svg" alt="" class="img">
-                            </div>
-                            <p>make a call</p></div></a>
-                        <a href="mailto:tripticholidays@gmail.com">
-                            <div>
-                                <div>
-                                    <img src="./img/email.svg" alt="" class="img">
-                                </div>
-                                <p>send a mail</p></div></a>
+                        
+                       
                      </div>
                      <div class="footer__address-block__social-media__block">
+                        <a href="tel:+919061238269"><div>
+                           
+                                <img src="./img/tel.svg" alt="" class="img">
+                           
+                           </div></a>
+                        <a href="mailto:tripticholidays@gmail.com">
+                            <div>
+                            
+                                    <img src="./img/email.svg" alt="" class="img">
+                               
+                                </div></a>
                          <a href="https://www.facebook.com/tripticholidays/?ref=pages_you_manage">
                              <div>
                                  <img src="./img/facebook.svg" alt="" class="img">
@@ -468,10 +484,10 @@
                         <h5>address</h5>
                         <p>
                            nilambur <br>
-                           eddakkara
+                           edakkara
                         
                         </p>
-                         
+                        <!-- BABFBCD480945A3C9B1B98769FEDEF7077BC -->
                    
                  </div>
              </div>
@@ -479,5 +495,7 @@
            </footer> 
        </div>
    </div>
+   
+
 </body>
 </html>
